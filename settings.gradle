@@ -1,0 +1,11 @@
+rootProject.name = 'mutant-api'
+
+include ':command',
+		':command:command-infrastructure',
+		':command:command-application',
+		':command:command-domain'
+
+include ':query',
+		':query:query-infrastructure',
+		':query:query-application',
+		':query:query-domain'

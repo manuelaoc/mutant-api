@@ -1,0 +1,7 @@
+dependencies {
+	compileOnly project.ext.lombok
+	annotationProcessor project.ext.lombok
+
+	testCompileOnly project.ext.lombok
+	testAnnotationProcessor project.ext.lombok
+}

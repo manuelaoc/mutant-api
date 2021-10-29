@@ -1,0 +1,14 @@
+dependencies {
+	implementation project(':command:command-domain')
+	implementation project(':command:command-application')
+
+	testCompileOnly project.ext.lombok
+	testAnnotationProcessor project.ext.lombok
+
+	implementation project.ext.h2
+	implementation project.ext.apachecommons
+	implementation project.ext.springbootstarteractuator
+	implementation project.ext.springbootweb
+	implementation project.ext.openapi
+	implementation project.ext.springbootjdbc
+}

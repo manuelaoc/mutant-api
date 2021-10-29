@@ -1,0 +1,6 @@
+dependencies {
+	implementation project(':query:query-domain')
+
+	compileOnly project.ext.lombok
+	annotationProcessor project.ext.lombok
+}
