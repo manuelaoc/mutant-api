@@ -12,7 +12,7 @@ public class ArgumentValidator {
 
     public static void validateMandatory(String[] dna) {
         if (dna == null || dna.length == 0) {
-            throw new MutantException("El ADN no puede ser nulo o vacío");
+            throw new MutantException("El ADN no puede ser nulo o vac\u00EDo");
         }
     }
 
@@ -26,8 +26,8 @@ public class ArgumentValidator {
     }
 
     public static void validateMinimumLengthSequence(String sequence) {
-        if (sequence.trim().length() != MINIMUM_LENGTH) {
-            throw new MutantException("Las secuencias del ADN deben contener minimo 4 caracteres");
+        if (sequence.trim().split("").length < MINIMUM_LENGTH) {
+            throw new MutantException(String.format("Las secuencias del ADN deben contener m\u00EDnimo %d caracteres", MINIMUM_LENGTH));
         }
     }
 

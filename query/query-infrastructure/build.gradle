@@ -3,9 +3,11 @@ dependencies {
 	implementation project(':query:query-application')
 
 	implementation project.ext.h2
-	implementation project.ext.apachecommons
-	implementation project.ext.springbootstarteractuator
 	implementation project.ext.springbootweb
 	implementation project.ext.openapi
 	implementation project.ext.springbootjdbc
+	implementation project.ext.springboottest
+
+	testImplementation project.ext.junit
+
 }

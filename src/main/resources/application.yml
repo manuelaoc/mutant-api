@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /mutant
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mutant.c3bnjbnz4raf.us-east-2.rds.amazonaws.com:3306/mutant
+    username: admin
+    password: mutantapimercadolibre
+  sql:
+    init:
+      encoding: UTF-8
+
+cloud:
+  aws:
+    region:
+      static: us-east-2

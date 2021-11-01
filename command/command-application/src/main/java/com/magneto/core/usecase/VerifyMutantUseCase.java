@@ -1,14 +1,14 @@
 package com.magneto.core.usecase;
 
 import com.magneto.core.command.MutantCommand;
+import com.magneto.core.exception.NoMutantException;
 import com.magneto.core.factory.MutantFactory;
-import com.magneto.core.model.Mutant;
 import com.magneto.core.service.VerifyMutantService;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 @Component
-@Transactional
+@Transactional(noRollbackFor = {NoMutantException.class})
 public class VerifyMutantUseCase {
     private final MutantFactory mutantFactory;
     private final VerifyMutantService verifyMutantService;
@@ -19,7 +19,6 @@ public class VerifyMutantUseCase {
     }
 
     public Boolean execute(MutantCommand mutantCommand) {
-        Mutant mutant = this.mutantFactory.create(mutantCommand);
-        return verifyMutantService.execute(mutant);
+        return verifyMutantService.execute(this.mutantFactory.create(mutantCommand));
     }
 }

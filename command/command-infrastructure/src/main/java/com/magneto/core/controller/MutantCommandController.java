@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("mutant")
-@Tag(name = "Verificación ADN mutante", description = "Controlador para verificar si un humano es mutante")
+@Tag(name = "Verificacion ADN mutante", description = "Controlador para verificar si un humano es mutante")
 public class MutantCommandController {
 
     private final VerifyMutantUseCase verifyMutantUseCase;
@@ -26,15 +26,15 @@ public class MutantCommandController {
 
     @PostMapping
     @ResponseStatus(code = HttpStatus.OK)
-    @Operation(summary = "Verificar el ADN enviado para saber si el humano es o no mutante")
+    @Operation(summary = "Verificar el ADN enviado para saber si un humano es o no mutante")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Se verifica el ADN y el humano es un mutante"),
-            @ApiResponse(responseCode = "400", description = "No se está enviando la información correcta para realizar la verificación"),
+            @ApiResponse(responseCode = "400", description = "No se esta enviando la informacion correcta para realizar la verificacion"),
             @ApiResponse(responseCode = "403", description = "Se verifica el ADN y el humano no es un mutante"),
-            @ApiResponse(responseCode = "500", description = "Error interno en el servidor al realizar la verificación")
+            @ApiResponse(responseCode = "500", description = "Error interno en el servidor al realizar la verificacion")
     })
     public ResponseEntity<Boolean> verify(
-            @Parameter(name = "mutantCommand", description = "Objeto MutantCommand con las propiedades necesarias para la verificación del ADN", required = true)
+            @Parameter(name = "mutantCommand", description = "Objeto MutantCommand con las propiedades necesarias para la verificacion del ADN", required = true)
             @RequestBody MutantCommand mutantCommand) {
         return new ResponseEntity<>(this.verifyMutantUseCase.execute(mutantCommand), HttpStatus.OK);
     }

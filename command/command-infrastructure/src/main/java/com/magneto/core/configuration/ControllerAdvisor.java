@@ -16,13 +16,13 @@ public class ControllerAdvisor extends ResponseEntityExceptionHandler {
     private static final Logger LOGGER_ERROR = LoggerFactory.getLogger(ControllerAdvisor.class);
 
     @ExceptionHandler(MutantException.class)
-    public ResponseEntity<String> handleCityNotFoundException(MutantException ex) {
+    public ResponseEntity<String> handleMutantException(MutantException ex) {
         LOGGER_ERROR.error(ex.getClass().getSimpleName(), ex);
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(NoMutantException.class)
-    public ResponseEntity<String> handleCityNotFoundException(NoMutantException ex) {
+    public ResponseEntity<String> handleNoMutantException(NoMutantException ex) {
         LOGGER_ERROR.error(ex.getClass().getSimpleName(), ex);
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.FORBIDDEN);
     }

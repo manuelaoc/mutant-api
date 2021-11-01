@@ -1,4 +1,7 @@
 dependencies {
+	implementation project.ext.springboottest
+	testImplementation project.ext.junit
+
 	compileOnly project.ext.lombok
 	annotationProcessor project.ext.lombok
 

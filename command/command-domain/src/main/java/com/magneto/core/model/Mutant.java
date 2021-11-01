@@ -21,7 +21,7 @@ public class Mutant {
         return dna;
     }
 
-    public boolean getIsMutant() {
+    public boolean isMutant() {
         return isMutant;
     }
 
