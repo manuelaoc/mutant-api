@@ -7,31 +7,29 @@
     <li>
       <a href="#Sobre-el-proyecto">Sobre el proyecto</a>
       <ul>
-        <li><a href="#tecnologias-utilizadas">Tecnologías utilizadas</a></li>
+        <li><a href="#Tecnologías-utilizadas">Tecnologías utilizadas</a></li>
       </ul>
     </li>
     <li>
-      <a href="#guia-de-inicio">Guía de inicio</a>
+      <a href="#Guía-de-inicio">Guía de inicio</a>
       <ul>
         <li><a href="#prerequisitos">Prerequisitos</a></li>
-        <li><a href="#instalacion">Instalación</a></li>
+        <li><a href="#instalación">Instalación</a></li>
       </ul>
     </li>
     <li>
-        <a href="#test-de-la-aplicacion">Test de la aplicación</a>
+        <a href="#test-de-la-aplicación">Test de la aplicación</a>
         <ul>
         <li><a href="#test-unitarios">Test Unitarios</a></li>
-        <li><a href="#test-integracion">Test Integración</a></li>
+        <li><a href="#test-Integración">Test Integración</a></li>
       </ul>
     </li>
     <li><a href="#cobertura">Cobertura</a></li>
     <li><a href="#despliegue">Despliegue</a></li>
-    <li><a href="#documentacion">Documentación</a></li>
-    <li><a href="#colecciones">Colecciones Postman Local - Producción</a></li>
+    <li><a href="#documentación">Documentación</a></li>
+    <li><a href="#Colecciones-Postman-Local-Producción">Colecciones Postman Local - Producción</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
@@ -112,9 +110,8 @@ El despliegue de la aplicación se realizó en el Cloud Computing AWS mediante e
 ## Documentación
 
 A continuación se encuentra el enlace para acceder a la documentación de la API realizada con Swagger 
-```sh
-   url: http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/swagger-ui
-   ``` 
+
+http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/swagger-ui.html
 
 ## Colecciones Postman
 

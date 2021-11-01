@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "489f55c8-53f1-4d7c-8658-820f49950cc3",
+		"name": "Mutant API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener estadísticas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/stats",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN mutante 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN mutante 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCACTA\",\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN mutante 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTTTGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCACTA\",\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN no mutante 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTCTGA\",\"CAGTAC\",\"TTATGT\",\"AGAAGG\",\"CCACTA\",\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN no mutante 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTCTGA\",\"CAGTCC\",\"TTATGT\",\"AGAAGG\",\"CCACTA\",\"TCCCTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN no mutante 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTCTGA\",\"CAGTCC\",\"TTATGT\",\"TTTAGG\",\"ACACTA\",\"TCCCTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN no mutante 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTCTGA\",\"CAGTCC\",\"TTATGT\",\"TTTAGC\",\"AGACTA\",\"TCCCTA\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN null",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN vacío",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN con secuencia duplicada",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"TTCTGA\",\"TTCTGA\",\"TTATGT\",\"TTTAGC\",\"AGACTA\",\"TCCCTA\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN con secuencias de diferente longitud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\", \"CAGTGC\", \"TTATGT\", \"AGAAGG\", \"CCCCTA\", \"TCAA\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN con secuencias de longitud menor a 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATG \", \"CAG \", \"TTA \", \"AGA \", \"CCC \", \"TCA \"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar ADN con secuencias que contienen letras diferentes a las permitidas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\", \"ATGCGB\", \"TTATGT\", \"AGAAGG\", \"CCCCTA\", \"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-145-10-130.us-east-2.compute.amazonaws.com:8080/mutant/mutant",
+					"protocol": "http",
+					"host": [
+						"ec2-3-145-10-130",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
